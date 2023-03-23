@@ -11,10 +11,28 @@ Code, Compile, Run and Debug online from anywhere in world.
 int
 main ()
 {
-  int a = 2;
-  int b = 3;
-  int c = add(2,3);
-  printf("%d",c );
+  int a,b,c;
+  float p;
+  printf("Ingrese 2 números separados por un espacio: ");
+    scanf("%d %d", &a, &b);
+  
+  
+  c = add(a, b);
+    printf("a + b = %d\n", c);
 
+    // perform subtraction
+    c = subtract(a, b);
+    printf("a - b = %d\n", c);
+
+    // perform multiplication
+    c = multiply(a, b);
+    printf("a * b = %d\n", c);
+
+    // perform division
+    c = divide(a, b);
+    printf("a / b = %d\n", c);
+
+    p = pi();
+    printf("pi= %f\n", p); 
   return 0;
 }
